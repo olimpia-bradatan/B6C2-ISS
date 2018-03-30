@@ -13,10 +13,10 @@ namespace ISS.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class Entities1 : DbContext
+    public partial class Entities4 : DbContext
     {
-        public Entities1()
-            : base("name=Entities1")
+        public Entities4()
+            : base("name=Entities4")
         {
         }
     
@@ -26,6 +26,8 @@ namespace ISS.Models
         }
     
         public virtual DbSet<AspNetRole> AspNetRoles { get; set; }
+        public virtual DbSet<AspNetUserClaim> AspNetUserClaims { get; set; }
+        public virtual DbSet<AspNetUserLogin> AspNetUserLogins { get; set; }
         public virtual DbSet<AspNetUser> AspNetUsers { get; set; }
         public virtual DbSet<Blood> Bloods { get; set; }
         public virtual DbSet<bloodResource> bloodResources { get; set; }
@@ -35,5 +37,6 @@ namespace ISS.Models
         public virtual DbSet<Hospital> Hospitals { get; set; }
         public virtual DbSet<Medic> Medics { get; set; }
         public virtual DbSet<Patient> Patients { get; set; }
+        public virtual DbSet<Transaction> Transactions { get; set; }
     }
 }

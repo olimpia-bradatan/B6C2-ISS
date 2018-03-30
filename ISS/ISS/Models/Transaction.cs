@@ -12,18 +12,16 @@ namespace ISS.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class Donor
+    public partial class Transaction
     {
-        public int idDonor { get; set; }
-        public string firstName { get; set; }
-        public string lastName { get; set; }
-        public System.DateTime birthDate { get; set; }
-        public string homeTown { get; set; }
-        public string email { get; set; }
-        public string phoneNumber { get; set; }
-        public string RH { get; set; }
-        public Nullable<int> idCenter { get; set; }
+        public int quantity { get; set; }
+        public int idCenter { get; set; }
+        public int idBlood { get; set; }
+        public int idHospital { get; set; }
+        public string status { get; set; }
     
+        public virtual Blood Blood { get; set; }
         public virtual donationCenter donationCenter { get; set; }
+        public virtual Hospital Hospital { get; set; }
     }
 }

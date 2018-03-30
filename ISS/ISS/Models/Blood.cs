@@ -18,6 +18,7 @@ namespace ISS.Models
         public Blood()
         {
             this.bloodResources = new HashSet<bloodResource>();
+            this.Transactions = new HashSet<Transaction>();
         }
     
         public int idBlood { get; set; }
@@ -26,5 +27,7 @@ namespace ISS.Models
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<bloodResource> bloodResources { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Transaction> Transactions { get; set; }
     }
 }

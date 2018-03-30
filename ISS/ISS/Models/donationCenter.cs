@@ -19,6 +19,8 @@ namespace ISS.Models
         {
             this.bloodResources = new HashSet<bloodResource>();
             this.centerEmployees = new HashSet<centerEmployee>();
+            this.Donors = new HashSet<Donor>();
+            this.Transactions = new HashSet<Transaction>();
         }
     
         public int idCenter { get; set; }
@@ -29,5 +31,9 @@ namespace ISS.Models
         public virtual ICollection<bloodResource> bloodResources { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<centerEmployee> centerEmployees { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Donor> Donors { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Transaction> Transactions { get; set; }
     }
 }

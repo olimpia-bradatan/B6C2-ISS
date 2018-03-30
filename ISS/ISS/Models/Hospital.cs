@@ -18,6 +18,7 @@ namespace ISS.Models
         public Hospital()
         {
             this.Medics = new HashSet<Medic>();
+            this.Transactions = new HashSet<Transaction>();
         }
     
         public int idHospital { get; set; }
@@ -26,5 +27,7 @@ namespace ISS.Models
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Medic> Medics { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Transaction> Transactions { get; set; }
     }
 }

@@ -12,18 +12,12 @@ namespace ISS.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class Donor
+    public partial class AspNetUserLogin
     {
-        public int idDonor { get; set; }
-        public string firstName { get; set; }
-        public string lastName { get; set; }
-        public System.DateTime birthDate { get; set; }
-        public string homeTown { get; set; }
-        public string email { get; set; }
-        public string phoneNumber { get; set; }
-        public string RH { get; set; }
-        public Nullable<int> idCenter { get; set; }
+        public string LoginProvider { get; set; }
+        public string ProviderKey { get; set; }
+        public string UserId { get; set; }
     
-        public virtual donationCenter donationCenter { get; set; }
+        public virtual AspNetUser AspNetUser { get; set; }
     }
 }

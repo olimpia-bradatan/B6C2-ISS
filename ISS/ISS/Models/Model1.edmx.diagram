@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="556f5eb9647642e3b3962f3221038c9f" Name="Diagram1" ZoomLevel="57">
+        <EntityTypeShape EntityType="Model.AspNetRole" Width="1.5" PointX="17.5" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.AspNetUserClaim" Width="1.5" PointX="22.375" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.AspNetUserLogin" Width="1.5" PointX="22.625" PointY="6.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.AspNetUser" Width="1.5" PointX="20" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Blood" Width="1.5" PointX="0.75" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.bloodResource" Width="1.5" PointX="3" PointY="5.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.centerEmployee" Width="1.5" PointX="3" PointY="8.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.donationCenter" Width="1.5" PointX="0.75" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Donor" Width="1.5" PointX="3" PointY="11.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Hospital" Width="1.5" PointX="3.75" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Medic" Width="1.5" PointX="6" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Patient" Width="1.5" PointX="8.25" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Transaction" Width="1.5" PointX="6" PointY="7.5" IsExpanded="true" />
+        <AssociationConnector Association="Model.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK__bloodReso__idBlo__5DCAEF64" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK__Transacti__idBlo__160F4887" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK__bloodReso__idCen__5CD6CB2B" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK__centerEmp__idCen__3A81B327" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK__Donor__idCenter__71D1E811" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK__Transacti__idCen__151B244E" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK__Medic__idHospita__4AB81AF0" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK__Transacti__idHos__17036CC0" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK__Patient__idMedic__4D94879B" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.AspNetUserRoles" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
